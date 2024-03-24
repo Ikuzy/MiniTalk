@@ -37,7 +37,7 @@ $(server_bonus): $(server_OBONUS)
 $(client_bonus): $(client_OBONUS)
 	$(CC) $(CFLAGS) $(client_OBONUS) -o $(client_bonus)
 
-bonus: $(server_bonus) $(client_bonus)
+bonus: $(NAME_BONUS)
 
 clean:
 	rm -f $(OBJ) $(OBONUS)
