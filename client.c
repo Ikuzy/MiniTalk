@@ -6,7 +6,7 @@
 /*   By: ozouine <ozouine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 03:32:54 by ozouine           #+#    #+#             */
-/*   Updated: 2024/03/22 06:17:03 by ozouine          ###   ########.fr       */
+/*   Updated: 2024/03/24 12:40:09 by ozouine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int	main(int ac, char **av)
 	char	*str;
 
 	pid = 0;
-	if (ac == 3)
+	if (ac == 3 && ft_isdigit(av[1]))
 	{
 		pid = ft_atoi(av[1]);
 		if (pid <= 0 || pid > 2147483647)

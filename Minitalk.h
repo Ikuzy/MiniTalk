@@ -6,7 +6,7 @@
 /*   By: ozouine <ozouine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 03:33:28 by ozouine           #+#    #+#             */
-/*   Updated: 2024/03/21 18:04:02 by ozouine          ###   ########.fr       */
+/*   Updated: 2024/03/24 12:43:52 by ozouine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ long		ft_atoi(const char *str);
 void		ft_putnbr(long long n);
 void		ft_putchar(char c);
 void		ft_putstr(char *s);
+int			ft_isdigit(char *str);
 
 #endif

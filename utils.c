@@ -6,7 +6,7 @@
 /*   By: ozouine <ozouine@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 03:33:05 by ozouine           #+#    #+#             */
-/*   Updated: 2024/03/21 17:54:39 by ozouine          ###   ########.fr       */
+/*   Updated: 2024/03/24 12:44:22 by ozouine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,4 +70,18 @@ void	ft_putnbr(long long n)
 void	ft_putchar(char c)
 {
 	write(1, &c, 1);
+}
+
+int	ft_isdigit(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+	{
+		if (!(str[i] >= '0' && str[i] <= '9'))
+			return (0);
+		i++;
+	}
+	return (1);
 }
